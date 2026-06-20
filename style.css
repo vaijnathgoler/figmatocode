@@ -1,0 +1,55 @@
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.contact-pattern {
+    background-color: #050505;
+}
+
+/* Ticker Infinite Scroll Animation Container */
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    background-color: #0E0E10;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+}
+
+.ticker-inner {
+    display: flex;
+    width: max-content;
+    animation: scrollTicker 25s linear infinite;
+}
+
+.ticker-inner:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollTicker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Gradient masks for smooth fade out on ticker edges */
+.ticker-wrap::before, .ticker-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+.ticker-wrap::before {
+    left: 0;
+    background: linear-gradient(to right, #0E0E10, transparent);
+}
+.ticker-wrap::after {
+    right: 0;
+    background: linear-gradient(to left, #0E0E10, transparent);
+}

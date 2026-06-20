@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch - MINING.COM.AU</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                        ticker: ['Oswald', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            500: '#03BFB5',
+                            600: '#007E77',
+                            100: '#C3F0ED'
+                        },
+                        darkest: '#0A0A0B',
+                        darker: '#1A1A1C',
+                        dark: '#0E0E10',
+                        bordercolor: '#192929',
+                        stockup: '#35B57F',
+                        stockdown: '#FF7263',
+                        asterisk: '#E5484D',
+                        inputBg: '#F5F5F5',
+                        inputBorder: '#E5E5E5',
+                        textGray: '#737373',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#F7F7F7] text-[#0A0A0A] font-sans antialiased">
+
+    <!-- BREAKING BAR -->
+    <div id="breaking-bar" class="bg-darkest py-2.5 px-4 lg:px-[80px] flex justify-center items-center z-50 relative">
+        <div class="max-w-[1280px] w-full flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-[#DC2626] shadow-[inset_0px_1px_6px_rgba(255,200,200,0.25)] border-[#7F1D1D] border rounded-[2px] px-1.5 py-1 flex justify-center items-center">
+                    <span class="text-white font-bold text-[12px] leading-[14px] drop-shadow-[0_2px_8px_rgba(91,11,11,0.33)]">BREAKING</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <p class="text-white font-medium text-[14px] leading-[20px] truncate max-w-[200px] sm:max-w-none">Amazon to buy Globalstar to bolster Leo satellite business</p>
+                    <div class="w-[3px] h-[3px] bg-[#737373] rounded-full mx-1 hidden sm:block"></div>
+                    <span class="text-[#737373] text-[14px] font-medium leading-[20px] hidden sm:block">15 minutes ago</span>
+                </div>
+            </div>
+            <button onclick="document.getElementById('breaking-bar').style.display='none'" class="text-gray-400 hover:text-white transition-colors p-1">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="bg-darker text-white sticky top-0 z-40 overflow-hidden border-b border-bordercolor">
+        <div class="max-w-[1440px] mx-auto px-4 lg:px-[80px] py-4 flex items-center justify-between">
+            
+            <!-- Logo Section matching Screenshot exactly -->
+            <div class="flex items-center gap-3">
+                <!-- Using Logo.png as primary fallback for user's local assets -->
+                <img src="Logo.png" alt="Mining Logo" class="h-9 w-auto object-contain">
+                <div class="flex flex-col leading-[1] pt-0.5">
+                    <span class="font-bold text-[24px] tracking-wide text-white font-sans">MINING</span>
+                    <span class="text-[11px] text-brand-500 tracking-[0.15em] font-medium mt-0.5">.COM.AU</span>
+                </div>
+            </div>
+
+            <!-- Animated Navigation matching active Sub-Bar screenshot -->
+            <nav class="hidden lg:flex items-center text-[14px] font-semibold h-[70px] absolute left-1/2 -translate-x-1/2 top-0">
+                <a href="#" class="relative text-brand-500 flex items-center h-full px-5 group">
+                    HOME
+                    <span class="absolute bottom-[-1px] left-0 w-full h-[4px] bg-brand-500 origin-left transition-transform duration-300"></span>
+                </a>
+                <a href="#" class="relative text-[rgba(255,255,255,0.82)] hover:text-white flex items-center h-full px-5 gap-1 group transition-colors">
+                    COMMODITIES <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    <span class="absolute bottom-[-1px] left-0 w-full h-[4px] bg-brand-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
+                </a>
+                <a href="#" class="relative text-[rgba(255,255,255,0.82)] hover:text-white flex items-center h-full px-5 gap-1 group transition-colors">
+                    REGIONS <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    <span class="absolute bottom-[-1px] left-0 w-full h-[4px] bg-brand-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
+                </a>
+                <a href="#" class="relative text-[rgba(255,255,255,0.82)] hover:text-white flex items-center h-full px-5 group transition-colors">
+                    EVENTS
+                    <span class="absolute bottom-[-1px] left-0 w-full h-[4px] bg-brand-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
+                </a>
+                <a href="#" class="relative text-[rgba(255,255,255,0.82)] hover:text-white flex items-center h-full px-5 group transition-colors">
+                    VIDEO
+                    <span class="absolute bottom-[-1px] left-0 w-full h-[4px] bg-brand-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
+                </a>
+                <a href="#" class="relative text-[rgba(255,255,255,0.82)] hover:text-white flex items-center h-full px-5 group transition-colors">
+                    WATCHLIST
+                    <span class="absolute bottom-[-1px] left-0 w-full h-[4px] bg-brand-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
+                </a>
+                <a href="#" class="relative text-[rgba(255,255,255,0.82)] hover:text-white flex items-center h-full px-3 ml-2 gap-1 group transition-colors">
+                    VIEW MORE <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    <span class="absolute bottom-[-1px] left-0 w-full h-[4px] bg-brand-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
+                </a>
+            </nav>
+
+            <div class="flex items-center gap-5">
+                <button class="bg-transparent hover:bg-white/10 p-3 rounded-[5px] transition-colors flex items-center justify-center">
+                    <i data-lucide="search" class="w-6 h-6"></i>
+                </button>
+                <a href="#" class="bg-brand-600 text-white text-[16px] font-bold px-4 py-2.5 rounded-[5px] shadow-[inset_0px_-2px_0px_rgba(0,0,0,0.05),inset_0px_0px_0px_1px_rgba(0,0,0,0.18)] hover:bg-[#006e68] transition-colors hidden sm:flex items-center justify-center transform hover:-translate-y-0.5 duration-200">SIGN IN</a>
+                <button class="lg:hidden text-gray-300 hover:text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- DYNAMIC SCROLLING TICKER -->
+    <div class="ticker-wrap h-[50px] flex items-center">
+        <div id="stock-ticker" class="ticker-inner"></div>
+    </div>
+
+    <!-- PROMOTED BAR -->
+    <div class="bg-[#FAFAFA] hidden lg:flex justify-center items-center py-4 px-[80px] gap-6 border-b border-[#E5E5E5]">
+        <div class="shrink-0 flex items-center gap-2">
+            <img src="MDF LOGO.png" alt="MDF Global" class="h-[22px] w-auto object-contain" onerror="this.style.display='none'">
+            <span class="font-bold text-sm tracking-wide">MDFGLOBAL</span>
+        </div>
+        
+        <div class="flex-1 flex gap-6 overflow-hidden items-center">
+             <div class="flex-none w-[200px] flex flex-col gap-2 group cursor-pointer">
+                <p class="text-[14px] font-medium text-[#181D27] leading-[20px] line-clamp-2 group-hover:text-brand-600 transition-colors">$2.6 million raise fuels American Uranium's growth | Big months ahead</p>
+                <div class="flex items-center gap-1">
+                    <span class="text-brand-600 font-bold text-[12px] leading-[18px]">Gold</span>
+                    <div class="w-2 h-2 flex items-center justify-center"><div class="w-0.5 h-0.5 bg-[#A3A3A3] rounded-full"></div></div>
+                    <span class="text-[#717680] font-medium text-[12px] leading-[16px]">Sep 29, 2026</span>
+                </div>
+            </div>
+            <div class="flex-none w-[200px] flex flex-col gap-2 group cursor-pointer">
+                <p class="text-[14px] font-medium text-[#181D27] leading-[20px] line-clamp-2 group-hover:text-brand-600 transition-colors">$2.6 million raise fuels American Uranium's growth | Big months ahead</p>
+                <div class="flex items-center gap-1">
+                    <span class="text-brand-600 font-bold text-[12px] leading-[18px]">Gold</span>
+                    <div class="w-2 h-2 flex items-center justify-center"><div class="w-0.5 h-0.5 bg-[#A3A3A3] rounded-full"></div></div>
+                    <span class="text-[#717680] font-medium text-[12px] leading-[16px]">Sep 29, 2026</span>
+                </div>
+            </div>
+            <div class="flex-none w-[200px] flex flex-col gap-2 group cursor-pointer">
+                <p class="text-[14px] font-medium text-[#181D27] leading-[20px] line-clamp-2 group-hover:text-brand-600 transition-colors">
+                    <span class="bg-[#EF4444] border border-[#EF4444] text-white px-1 py-0.5 rounded-[2px] text-[12px] mr-1">Exclusive</span>
+                    $2.6 million raise fuels American Uranium's growth | Big months ahead
+                </p>
+                <div class="flex items-center gap-1">
+                    <span class="text-brand-600 font-bold text-[12px] leading-[18px]">Gold</span>
+                    <div class="w-2 h-2 flex items-center justify-center"><div class="w-0.5 h-0.5 bg-[#A3A3A3] rounded-full"></div></div>
+                    <span class="text-[#717680] font-medium text-[12px] leading-[16px]">Sep 29, 2026</span>
+                </div>
+            </div>
+            <div class="flex-none w-[200px] flex flex-col gap-2 group cursor-pointer">
+                <p class="text-[14px] font-medium text-[#181D27] leading-[20px] line-clamp-2 group-hover:text-brand-600 transition-colors">
+                    <span class="bg-[#EF4444] border border-[#EF4444] text-white px-1 py-0.5 rounded-[2px] text-[12px] mr-1">Exclusive</span>
+                    $2.6 million raise fuels American Uranium's growth | Big months ahead
+                </p>
+                <div class="flex items-center gap-1">
+                    <span class="text-brand-600 font-bold text-[12px] leading-[18px]">Gold</span>
+                    <div class="w-2 h-2 flex items-center justify-center"><div class="w-0.5 h-0.5 bg-[#A3A3A3] rounded-full"></div></div>
+                    <span class="text-[#717680] font-medium text-[12px] leading-[16px]">Sep 29, 2026</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <button class="w-7 h-7 rounded-full border border-[#E5E5E5] flex items-center justify-center text-gray-500 hover:text-black hover:border-black transition-colors">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+            </button>
+            <button class="w-7 h-7 rounded-full border border-[#A3A3A3] flex items-center justify-center text-gray-600 hover:text-black hover:border-black transition-colors">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="w-full mx-auto px-4 lg:px-[80px] py-[80px] bg-[#F7F7F7] flex flex-col gap-[50px]">
+        
+        <div class="flex flex-col gap-[30px] max-w-[1440px] mx-auto w-full">
+            <!-- Breadcrumbs & Header -->
+            <div class="flex flex-col gap-8">
+                <nav class="flex items-center gap-2 text-[14px] font-semibold">
+                    <a href="#" class="text-textGray hover:text-brand-600 flex items-center gap-1 transition-colors"><i data-lucide="home" class="w-4 h-4"></i> Home</a>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-gray-400"></i>
+                    <span class="text-brand-600">Contact Us</span>
+                </nav>
+
+                <div class="flex flex-col gap-3.5">
+                    <h1 class="font-display font-bold text-[36px] leading-[44px] text-[#0A0A0A]">Get In Touch</h1>
+                    <p class="text-textGray text-[14px] font-medium leading-[20px] max-w-[607px]">Have a story tip, advertising inquiry, or general question? We'd love to hear from you.</p>
+                </div>
+            </div>
+
+            <!-- Contact Box Area -->
+            <div class="flex flex-col lg:flex-row gap-5 items-start">
+                
+                <!-- Left: Contact Info Card -->
+                <div class="w-full lg:w-[500px] h-auto lg:h-[520px] shrink-0 contact-pattern text-white rounded-[8px] p-[30px] relative overflow-hidden flex flex-col gap-[30px] shadow-lg">
+                    
+                    <svg class="absolute bottom-0 right-0 w-[180px] h-[180px] opacity-100 pointer-events-none" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="40" width="10" height="10" fill="#295452"/>
+                        <rect x="10" y="40" width="10" height="10" fill="#31726F"/>
+                        <rect x="20" y="40" width="10" height="10" fill="#295452"/>
+                        <rect x="30" y="40" width="10" height="10" fill="#1C3836"/>
+                        <rect x="40" y="40" width="10" height="10" fill="#234B49"/>
+                        <rect x="10" y="30" width="10" height="10" fill="#234B49"/>
+                        <rect x="20" y="30" width="10" height="10" fill="#31726F"/>
+                        <rect x="30" y="30" width="10" height="10" fill="#295452"/>
+                        <rect x="40" y="30" width="10" height="10" fill="#1C3836"/>
+                        <rect x="20" y="20" width="10" height="10" fill="#295452"/>
+                        <rect x="30" y="20" width="10" height="10" fill="#31726F"/>
+                        <rect x="40" y="20" width="10" height="10" fill="#234B49"/>
+                        <rect x="30" y="10" width="10" height="10" fill="#234B49"/>
+                        <rect x="40" y="10" width="10" height="10" fill="#31726F"/>
+                        <rect x="40" y="0" width="10" height="10" fill="#295452"/>
+                    </svg>
+
+                    <div class="relative z-10 flex flex-col gap-3.5">
+                        <h2 class="font-display text-[30px] font-bold leading-[36px]">Contact Information</h2>
+                        <p class="text-[14px] font-medium opacity-70 leading-[20px]">Say something to start a live chat!</p>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col gap-6">
+                        <div class="flex flex-col gap-1.5">
+                            <div class="flex items-center gap-1.5">
+                                <img src="location-01.svg" onerror="this.style.display='none'" class="w-[18px] h-[18px]">
+                                <i data-lucide="map-pin" class="w-[15px] h-[16px] text-brand-600 [&:not(:only-child)]:hidden"></i>
+                                <span class="font-bold text-[16px] leading-[20px]">Head Office</span>
+                            </div>
+                            <p class="pl-[26px] opacity-70 text-[14px] leading-[20px] font-normal">Level 14, 167 Eagle Street Brisbane QLD 4000 Australia</p>
+                        </div>
+                        <div class="flex flex-col gap-1.5">
+                            <div class="flex items-center gap-1.5">
+                                <img src="Buttons call-02.svg" onerror="this.style.display='none'" class="w-[18px] h-[18px]">
+                                <i data-lucide="phone" class="w-[15px] h-[15px] text-brand-600 [&:not(:only-child)]:hidden"></i>
+                                <span class="font-bold text-[16px] leading-[20px]">Phone</span>
+                            </div>
+                            <p class="pl-[26px] opacity-70 text-[14px] leading-[20px] font-normal">+61 7 3010 9220</p>
+                        </div>
+                        <div class="flex flex-col gap-1.5">
+                            <div class="flex items-center gap-1.5">
+                                <img src="mail-01.svg" onerror="this.style.display='none'" class="w-[18px] h-[18px]">
+                                <i data-lucide="mail" class="w-[15px] h-[15px] text-brand-600 [&:not(:only-child)]:hidden"></i>
+                                <span class="font-bold text-[16px] leading-[20px]">Editorial</span>
+                            </div>
+                            <p class="pl-[26px] opacity-70 text-[14px] leading-[20px] font-normal">editor@mining.com.au</p>
+                        </div>
+                        <div class="flex flex-col gap-1.5">
+                            <div class="flex items-center gap-1.5">
+                                <i data-lucide="briefcase" class="w-[15px] h-[15px] text-brand-600"></i>
+                                <span class="font-bold text-[16px] leading-[20px]">Advertising</span>
+                            </div>
+                            <p class="pl-[26px] opacity-70 text-[14px] leading-[20px] font-normal">advertise@mining.com.au</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Contact Form -->
+                <div class="w-full lg:w-[762px] lg:h-[520px] bg-white rounded-[8px] p-[30px] lg:pl-[36px] shadow-sm">
+                    <form action="#" method="POST" class="flex flex-col gap-3.5 h-full">
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                            <div class="flex flex-col gap-[2px]">
+                                <label for="firstName" class="text-black text-[14px] font-normal leading-[25px]">First Name <span class="text-asterisk">*</span></label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Robert" required
+                                    class="w-full bg-inputBg border border-inputBorder rounded-[6px] h-[52px] px-4 text-[13px] text-textGray outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600 transition-all">
+                            </div>
+                            <div class="flex flex-col gap-[2px]">
+                                <label for="lastName" class="text-black text-[14px] font-normal leading-[25px]">Email Address <span class="text-asterisk">*</span></label>
+                                <input type="email" id="lastName" name="lastName" placeholder="Fox" required
+                                    class="w-full bg-inputBg border border-inputBorder rounded-[6px] h-[52px] px-4 text-[13px] text-textGray outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600 transition-all">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-[2px]">
+                            <label for="subject" class="text-black text-[14px] font-normal leading-[25px]">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Download" 
+                                class="w-full bg-inputBg border border-inputBorder rounded-[6px] h-[52px] px-4 text-[13px] text-textGray outline-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600 transition-all">
+                        </div>
+
+                        <div class="flex flex-col gap-[2px]">
+                            <label for="message" class="text-black text-[14px] font-normal leading-[25px]">Message <span class="text-asterisk">*</span></label>
+                            <textarea id="message" name="message" placeholder="Message" required
+                                class="w-full bg-inputBg border border-inputBorder rounded-[6px] h-[122px] p-4 text-[13px] text-textGray outline-none resize-none focus:border-brand-600 focus:ring-1 focus:ring-brand-600 transition-all"></textarea>
+                        </div>
+
+                        <div class="pt-4 mt-auto">
+                            <button type="submit" class="bg-brand-600 hover:bg-[#006e68] text-white font-semibold text-[16px] leading-[24px] py-3 px-[18px] rounded-[5px] shadow-[inset_0px_-2px_0px_rgba(0,0,0,0.05),inset_0px_0px_0px_1px_rgba(0,0,0,0.18)] transition-colors inline-flex transform hover:-translate-y-0.5 duration-200">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- EXPLORE REGIONS -->
+    <section class="bg-white py-[80px] px-4 lg:px-[80px] flex flex-col gap-[50px] w-full items-center">
+        <div class="max-w-[1280px] w-full flex flex-col gap-[50px]">
+            <div class="flex items-center gap-[32px] w-full">
+                <div class="flex items-center gap-3">
+                    <div class="w-4 h-4 bg-brand-600"></div>
+                    <h2 class="font-display font-black text-[24px] leading-[32px] uppercase text-black">Explore all regions</h2>
+                </div>
+                <div class="flex-1 h-px border-t border-[#D4D4D4]"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+                <a href="#" class="group relative rounded-[6px] overflow-hidden h-[174px] block shadow-sm">
+                    <img src="Rectangle 34624292-7.png" alt="Australia" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-4 pb-4">
+                        <h3 class="text-white font-bold text-[16px] leading-[20px]">Australia</h3>
+                        <p class="text-white font-medium text-[12px] leading-[16px]">2,561 Articles</p>
+                    </div>
+                </a>
+                <a href="#" class="group relative rounded-[6px] overflow-hidden h-[174px] block shadow-sm">
+                    <img src="Rectangle 34624292-5.png" alt="Canada" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-4 pb-4">
+                        <h3 class="text-white font-bold text-[16px] leading-[20px]">Canada</h3>
+                        <p class="text-white font-medium text-[12px] leading-[16px]">656 Articles</p>
+                    </div>
+                </a>
+                <a href="#" class="group relative rounded-[6px] overflow-hidden h-[174px] block shadow-sm">
+                    <img src="Rectangle 34624292-4.png" alt="United States of America" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-4 pb-4">
+                        <h3 class="text-white font-bold text-[16px] leading-[20px]">United States of America</h3>
+                        <p class="text-white font-medium text-[12px] leading-[16px]">3,578 Articles</p>
+                    </div>
+                </a>
+                <a href="#" class="group relative rounded-[6px] overflow-hidden h-[174px] block shadow-sm">
+                    <img src="Rectangle 34624292-3.png" alt="Asia" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-4 pb-4">
+                        <h3 class="text-white font-bold text-[16px] leading-[20px]">Asia</h3>
+                        <p class="text-white font-medium text-[12px] leading-[16px]">1,889 Articles</p>
+                    </div>
+                </a>
+                <a href="#" class="group relative rounded-[6px] overflow-hidden h-[174px] block shadow-sm">
+                    <img src="Rectangle 34624292-1.png" alt="Europe" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-4 pb-4">
+                        <h3 class="text-white font-bold text-[16px] leading-[20px]">Europe</h3>
+                        <p class="text-white font-medium text-[12px] leading-[16px]">1,374 Articles</p>
+                    </div>
+                </a>
+                <a href="#" class="group relative rounded-[6px] overflow-hidden h-[174px] block shadow-sm">
+                    <img src="Rectangle 34624292-6.png" alt="Africa" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-4 pb-4">
+                        <h3 class="text-white font-bold text-[16px] leading-[20px]">Africa</h3>
+                        <p class="text-white font-medium text-[12px] leading-[16px]">89 Articles</p>
+                    </div>
+                </a>
+                <a href="#" class="group relative rounded-[6px] overflow-hidden h-[174px] block shadow-sm">
+                    <img src="Rectangle 34624292.png" alt="South America" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-4 pb-4">
+                        <h3 class="text-white font-bold text-[16px] leading-[20px]">South America</h3>
+                        <p class="text-white font-medium text-[12px] leading-[16px]">155 Articles</p>
+                    </div>
+                </a>
+                <a href="#" class="group relative rounded-[6px] overflow-hidden h-[174px] block shadow-sm">
+                    <img src="Rectangle 34624292-2.png" alt="Middle East" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-4 pb-4">
+                        <h3 class="text-white font-bold text-[16px] leading-[20px]">Middle East</h3>
+                        <p class="text-white font-medium text-[12px] leading-[16px]">987 Articles</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="relative rounded-[6px] overflow-hidden bg-gradient-to-r from-[#012623] to-[#040C0B] w-full flex flex-col justify-center p-12 lg:p-16 mt-4 shadow-xl">
+                <div class="relative z-10 w-full flex flex-col gap-6">
+                    <div class="flex flex-col gap-2">
+                        <h2 class="font-display text-[32px] md:text-[40px] font-extrabold text-white uppercase leading-[1.1] tracking-tight">Stay Ahead of the<br/>Mining Market</h2>
+                        <p class="text-[#8FB3B1] text-[16px] font-medium leading-[24px]">Real-time news, commodity moves, and analysis.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-2">
+                        <button class="bg-white text-black font-semibold text-[15px] py-3 px-6 rounded-[4px] shadow-sm hover:bg-gray-100 transition-colors w-max transform hover:-translate-y-0.5 duration-200">Latest Analysis</button>
+                        <button class="bg-[#008b81] hover:bg-[#006e68] text-white font-semibold text-[15px] py-3 px-6 rounded-[4px] shadow-sm transition-colors border border-transparent w-max transform hover:-translate-y-0.5 duration-200">Get Market Alerts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white relative flex flex-col items-center border-t border-bordercolor overflow-hidden">
+        
+        <div class="w-full max-w-[1440px] px-4 lg:px-[80px] py-[40px] flex justify-center z-10 relative">
+            <div class="max-w-[1280px] w-full flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+                <div class="flex flex-col gap-2 max-w-[439px]">
+                    <h3 class="font-display font-bold text-[30px] leading-[38px] text-white">Subscribe to our Newsletter</h3>
+                    <p class="text-white text-[16px] font-normal leading-[24px]">Daily news and expert analysis, it's free to subscribe.</p>
+                </div>
+                <div class="flex flex-col gap-1.5 w-full lg:w-auto">
+                    <form class="flex flex-col sm:flex-row gap-2">
+                        <input type="text" placeholder="Full Name" class="bg-white text-[#667085] px-[14px] py-[10px] rounded-[4px] text-[16px] w-full sm:w-[164px] border border-[#D0D5DD] focus:outline-none focus:ring-1 focus:ring-brand-600 shadow-[0_1px_2px_rgba(16,24,40,0.05)]">
+                        <input type="email" placeholder="Enter email address" class="bg-white text-[#667085] px-[14px] py-[10px] rounded-[4px] text-[16px] w-full sm:w-[273px] border border-[#D0D5DD] focus:outline-none focus:ring-1 focus:ring-brand-600 shadow-[0_1px_2px_rgba(16,24,40,0.05)]">
+                        <button type="submit" class="bg-brand-600 hover:bg-[#006e68] text-white px-4 py-2.5 rounded-[5px] font-semibold text-[16px] transition-colors whitespace-nowrap shadow-[inset_0px_-2px_0px_rgba(0,0,0,0.05),inset_0px_0px_0px_1px_rgba(0,0,0,0.18)]">Subscribe</button>
+                    </form>
+                    <p class="text-[14px] text-white mt-1">Read about our <a href="#" class="underline hover:text-brand-100 transition-colors">privacy policy.</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full max-w-[1440px] px-4 lg:px-[80px] border-t border-bordercolor flex flex-col lg:flex-row justify-between z-10 relative bg-black">
+            <div class="flex-1 lg:max-w-[352px] py-[60px] lg:pb-[100px] pr-8 lg:border-r border-[#192929] flex flex-col gap-8">
+                <div class="flex items-center gap-3">
+                    <img src="Logo.png" alt="Mining Logo" class="h-10 w-auto object-contain">
+                    <div class="flex flex-col leading-[1.1] pt-1">
+                        <span class="font-bold text-[28px] tracking-wide text-white font-sans">MINING</span>
+                        <span class="text-[12px] text-brand-500 tracking-[0.15em] font-medium">.COM.AU</span>
+                    </div>
+                </div>
+                <p class="text-white text-[14px] font-medium leading-[20px] opacity-80 mt-2">Delivering insights on commodities, regions, and global markets through expert analysis, articles, and events.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-brand-500 transition-colors transform hover:scale-110 duration-200"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                    <a href="#" class="hover:text-brand-500 transition-colors transform hover:scale-110 duration-200"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    <a href="#" class="hover:text-brand-500 transition-colors transform hover:scale-110 duration-200"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                    <a href="#" class="hover:text-brand-500 transition-colors transform hover:scale-110 duration-200"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+
+            <div class="flex-1 lg:max-w-[232px] py-[60px] lg:pb-[100px] px-0 lg:px-8 lg:border-r border-[#192929] flex flex-col gap-8">
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-ticker font-medium text-[16px] leading-[20px] text-[#EAECF0]">EXPLORE</h4>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Home</a></li>
+                        <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Articles</a></li>
+                        <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Videos</a></li>
+                        <li class="flex items-center gap-2">
+                            <a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Events</a>
+                            <span class="bg-[rgba(0,126,119,0.15)] text-[#00FFF1] text-[11px] font-bold px-1.5 py-0.5 rounded-[4px] leading-[18px]">+2 NEW</span>
+                        </li>
+                        <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Company</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4 mt-4">
+                    <h4 class="font-ticker font-medium text-[16px] leading-[20px] text-[#EAECF0]">CATEGORIES</h4>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Commodity</a></li>
+                        <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Region</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex-1 lg:max-w-[232px] py-[60px] lg:pb-[100px] px-0 lg:px-8 lg:border-r border-[#192929] flex flex-col gap-4">
+                <h4 class="font-ticker font-medium text-[16px] leading-[20px] text-[#EAECF0]">EVENTS</h4>
+                <ul class="flex flex-col gap-3">
+                    <li class="flex items-center gap-2">
+                        <a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Events Overview</a>
+                        <span class="bg-[#301616] text-[#FF6B6B] text-[11px] font-bold px-2 py-0.5 rounded-[4px] leading-[18px]">LIVE</span>
+                    </li>
+                    <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Upcoming Events</a></li>
+                    <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Past Events</a></li>
+                </ul>
+            </div>
+
+            <div class="flex-1 lg:max-w-[232px] py-[60px] lg:pb-[100px] px-0 lg:px-8 flex flex-col gap-4">
+                <h4 class="font-ticker font-medium text-[16px] leading-[20px] text-[#EAECF0]">COMPANY</h4>
+                <ul class="flex flex-col gap-3">
+                    <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Team</a></li>
+                    <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Authors</a></li>
+                    <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Presenters</a></li>
+                    <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Contributers</a></li>
+                    <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Advertise</a></li>
+                    <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Contact Us</a></li>
+                    <li><a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Help Centre</a></li>
+                    <li class="flex items-center gap-2">
+                        <a href="#" class="text-[#D0D5DD] text-[14px] font-semibold hover:text-brand-500 transition-colors">Careers</a>
+                        <span class="bg-[rgba(0,126,119,0.15)] text-[#00FFF1] text-[11px] font-bold px-1.5 py-0.5 rounded-[4px] leading-[18px]">HIRING</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-full max-w-[1440px] px-4 lg:px-[80px] py-[32px] border-t border-[#192929] flex flex-col sm:flex-row justify-between items-center gap-4 text-brand-100 text-[12px] font-normal leading-[18px] bg-black z-10 relative">
+            <p>&copy; 2026 Mining.com.au All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms & Conditions</a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 w-full h-[502px] bg-gradient-to-b from-transparent to-black pointer-events-none z-0"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
